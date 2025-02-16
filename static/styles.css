@@ -1,37 +1,31 @@
 .header {
-    background-color: #4caf50; /* Цвет фона для шапки */
-    padding: 10px; /* Внутреннее пространство */
-    color: white; /* Цвет текста внутри шапки */
-    display: flex; /* Используем Flexbox для выравнивания */
-    align-items: center; /* Центруем по вертикали */
-    justify-content: center; /* Выравнивание по центру */
+    background-color: #4caf50;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-container {
-    margin-right: 10px; /* Отступ справа от логотипа */
+    margin-right: 10px;
 }
 
-.logo {
-    width: 50px; /* Ширина логотипа */
-    height: 50px; /* Высота логотипа */
-    border-radius: 50%; /* Скругления для получения круга */
-    object-fit: cover; /* Обрезка изображения по форме */
-}
 
 .search-bar {
-    background-color: white; /* Цвет фона для поисковой строки */
-    border-radius: 5px; /* Скругленные углы */
-    padding: 5px; /* Внутренние отступы */
-    width: 1300px; /* Ширина поисковой строки */
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 1300px;
     height: 30px;
 }
 
 .search-bar input {
-    border: none; /* Убираем рамку вокруг инпута */
-    padding: 5px; /* Внутренние отступы для инпута */
-    width: 100%; /* Ширина для заполнения родительского блока */
-    border-radius: 5px; /* Скругленные углы для инпута */
-    outline: none; /* Убираем рамку при фокусе */
+    border: none;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
 }
 
 .sot_container {
