@@ -1,0 +1,159 @@
+.header {
+    background-color: #4caf50; /* Цвет фона для шапки */
+    padding: 10px; /* Внутреннее пространство */
+    color: white; /* Цвет текста внутри шапки */
+    display: flex; /* Используем Flexbox для выравнивания */
+    align-items: center; /* Центруем по вертикали */
+    justify-content: center; /* Выравнивание по центру */
+}
+
+.logo-container {
+    margin-right: 10px; /* Отступ справа от логотипа */
+}
+
+.logo {
+    width: 50px; /* Ширина логотипа */
+    height: 50px; /* Высота логотипа */
+    border-radius: 50%; /* Скругления для получения круга */
+    object-fit: cover; /* Обрезка изображения по форме */
+}
+
+.search-bar {
+    background-color: white; /* Цвет фона для поисковой строки */
+    border-radius: 5px; /* Скругленные углы */
+    padding: 5px; /* Внутренние отступы */
+    width: 1300px; /* Ширина поисковой строки */
+    height: 30px;
+}
+
+.search-bar input {
+    border: none; /* Убираем рамку вокруг инпута */
+    padding: 5px; /* Внутренние отступы для инпута */
+    width: 100%; /* Ширина для заполнения родительского блока */
+    border-radius: 5px; /* Скругленные углы для инпута */
+    outline: none; /* Убираем рамку при фокусе */
+}
+
+.sot_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.sot-item {
+    border: 1px solid #ccc;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    width: 150px;
+    padding: 10px;
+}
+
+.so_name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* работает с самим блоком*/
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /*расстояние блоков*/
+    max-width: 600px;
+}
+
+/* настройка блоков*/
+.news-item {
+    border: 1px solid #ccc;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    overflow: hidden;
+}
+
+/*настраисваем изображение*/
+.news-image {
+    height: 65%;
+    overflow: hidden;
+}
+
+/*работа с изображением*/
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*нижний  блок*/
+.news-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 30%;
+    padding: 10px;
+}
+
+.news-title {
+    font-size: 1.1em; 
+    font-weight: bold;
+}
+
+.news-description {
+    font-size: 0.8em;
+    margin: 10px 0px; 
+    flex-grow: 1; 
+}
+
+.news-date {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.sob_conte {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    width: 600px;
+}
+
+.sob_item {
+    border: 1px solid #ccc;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.sob_name {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.sob_desck {
+    flex-grow: 1;
+}
+
+.sob_date {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 0.8em;
+}
+
+.sob_avtor {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 0.8em;
+}

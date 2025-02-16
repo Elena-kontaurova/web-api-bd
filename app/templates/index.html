@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="Логотип" class="logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Введите для поиска">
+        </div>
+    </div>
+    
+    <h1>Сотрудники</h1>
+    <div class="sot_container">
+        {% for ii in sotrud %}
+        <div class="sot-item">
+            <div class="so_name">{{ ii.name }}</div>
+            <div class="so_dol">{{  ii.dol }}</div>
+            <div class="so_email">{{ ii.email }}</div>
+            <div class="so_phone">{{  ii.phone }}</div>
+            <div class="so_date">{{  ii.date}}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h1>Календарь событий</h1>
+<div class="main-container"> <!-- Добавляем этот контейнер -->
+    <div class="calendar-container">
+        <input type="datetime-local" id="Test_DatetimeLocal">
+    </div>
+
+    <h1>Новости</h1>
+    <div class="news-container">
+        {% for item in news_items %}
+        <div class="news-item">
+            <div class="news-image">
+                <img src="{{ item.img }}" alt="News Image">
+            </div>
+            <div class="news-content">
+                <div class="news-title">{{ item.name }}</div>
+                <div class="news-description">{{ item.text }}</div>
+                <div class="news-date">{{ item.date }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h1>События</h1>
+    <div class="sob_conte">
+        {% for it in sobis %}
+        <div class="sob_item">
+            <div class="sob_name">{{ it.name }}</div>
+            <div class="sob_desck">{{ it.text }}</div>
+            <div class="sob_date">{{ it.date }}</div>
+            <div class="sob_avtor">{{ it.avtor }}</div>
+        </div>
+        {% endfor %}
+</body>
+</html>
